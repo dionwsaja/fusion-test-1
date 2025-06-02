@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav section starts -->
+    <nav class="sticky top-0 bg-white z-50" id="navbar">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-6 text-black relative"
+      >
+        <div>
+          <a href="./about.html">
+            <img
+              src="../public/assets/logo_2.png"
+              alt="Fusionlab logo"
+              class="w-[250px]"
+            />
+          </a>
+        </div>
+        <div class="sm:hidden">
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger-btn"
+            aria-label="Toggle menu"
+            class="btn btn-ghost"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden sm:flex items-center gap-x-8 text-xl">
+          <li>
+            <a href="../index.html" class="hover:text-[#FF914D] duration-100"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[#FF914D] duration-100"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./service.html" class="hover:text-[#FF914D] duration-100"
+              >Services</a
+            >
+          </li>
+
+          <li>
+            <a href="./blog.html" class="hover:text-[#FF914D] duration-100"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile menu sliding from top -->
+      <div
+        id="mobile-menu"
+        class="sm:hidden max-h-0 overflow-hidden bg-white shadow-md transition-[max-height] duration-500 ease-in-out"
+        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)"
+      >
+        <ul class="flex flex-col gap-y-6 px-6 py-4 text-xl">
+          <li>
+            <a href="../index.html" class="hover:text-[#FF914D] duration-100"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./about.html" class="hover:text-[#FF914D] duration-100"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./service.html" class="hover:text-[#FF914D] duration-100"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./blog.html" class="hover:text-[#FF914D] duration-100"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav section ends -->
+
+    <!-- About Us section 2 starts -->
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div>
+          <h1 class="text-center text-5xl">About Us</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 pt-8">
+          <div
+            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
+          >
+            <p class="md:text-lg lg:text-xl">
+              <span class="font-bold">fusion.lab</span> is the official brand of
+              <span class="font-bold">CV Fusion Jaya Group</span>, a company
+              engaged in the trade and services of digital weighing systems for
+              a wide range of business scales—from micro and small enterprises
+              to national and multinational corporations.
+            </p>
+          </div>
+          <div
+            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
+          >
+            <p class="md:text-lg lg:text-xl">
+              Trusted by industry leaders such as
+              <span class="font-bold">PT Mettler Toledo </span> and various
+              corporate clients, we have built a reputation for delivering
+              accurate, efficient, and reliable weighing solutions tailored to
+              industrial standards.
+            </p>
+          </div>
+          <div
+            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
+          >
+            <p class="md:text-lg lg:text-xl">
+              At the same time, we are passionate about making high-quality
+              technology more accessible for micro and small businesses.
+              fusion.Lab bridges this gap by offering
+              <span class="font-bold"
+                >affordable, scalable weighing solutions</span
+              >
+              with
+              <span class="font-bold"
+                >subscription-based maintenance services</span
+              >
+              , ensuring long-term reliability and convenience for businesses of
+              any size.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About US section 2 ends -->
+    <!-- Footer Section Starts -->
+    <footer class="bg-[#1f2d3d] text-white">
+      <div class="max-w-7xl mx-auto px-6 py-12 space-y-8">
+        <!-- Top Text Section -->
+        <div class="text-center space-y-3">
+          <p class="text-lg md:text-2xl">Got a Project in Mind?</p>
+          <h1
+            class="text-3xl md:text-5xl font-bold tracking-wide max-w-3xl mx-auto"
+          >
+            Do Better Software Design with Us.
+          </h1>
+        </div>
+
+        <!-- Divider -->
+        <div class="h-[1px] bg-gray-500/30 w-full"></div>
+
+        <!-- Contact & Social Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="pb-4">
+            <a href="./about.html">
+              <img
+                src="../public/assets/logo_2.png"
+                alt="Fusionlab logo"
+                class="w-[200px]"
+              />
+            </a>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="flex flex-col gap-y-1 text-lg">
+            <p>
+              Email:
+              <a
+                href="mailto:contactfusion.lab24@gmail.com"
+                class="underline hover:text-[#f1823c] transition"
+              >
+                contactfusion.lab24@gmail.com
+              </a>
+            </p>
+            <p>Contact: 085784246763</p>
+            <p>Jawa Timur - Jl. Bulak Setro 4 No 1, Kota Surabaya, 60124</p>
+          </div>
+
+          <!-- Social Media & Button -->
+          <div class="flex flex-col md:items-end">
+            <div class="flex gap-x-4 py-6 md:py-0 md:pb-6">
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram text-2xl hover:text-[#f1823c] transition"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-tiktok text-2xl hover:text-[#f1823c] transition"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-facebook text-2xl hover:text-[#f1823c] transition"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="bg-[#f1823c] text-white px-4 py-2 rounded-full border border-[#f1823c] hover:bg-white hover:text-[#f1823c] transition font-medium w-fit"
+              >
+                Connect with us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section Ends -->
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "flowbite": "^3.1.2",
+    "tailwindcss": "^4.1.7"
+  },
+  "name": "fusionlab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "daisyui": "^5.0.42"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

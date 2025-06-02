@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FusionLab</title>
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  </head>
+  <body class="bg-white">
+    <!-- Navbar section starts -->
+    <nav class="bg-[#12181F] text-white sticky top-0 z-10" id="navbar">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <img
+              src="./public/assets/logo_2.png"
+              alt="fusionlab"
+              class="w-[150px] lg:w-[200px]"
+            />
+          </div>
+          <div class="block md:hidden">
+            <button id="hamburger" class="cursor-pointer right-4">
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+          </div>
+          <div class="hidden md:block">
+            <div class="flex">
+              <ul class="flex items-center justify-center gap-x-8 text-xl">
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">Home</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">About Us</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">Services</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu starts -->
+        <div
+          id="mobile-menu"
+          class="md:hidden max-h-0 overflow-hidden transition-all duration-300 mt-4"
+        >
+          <ul
+            class="flex flex-col gap-y-4 text-lg bg-[#12181F] px-4 py-4 rounded-md shadow-md"
+          >
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">Home</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">About Us</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">Services</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu ends -->
+      </div>
+    </nav>
+
+    <!-- Hero section starts -->
+    <section class="bg-[#12181F] text-white pt-2 pb-16 rounded-b-4xl">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <div class="flex flex-col gap-y-3 md:justify-center">
+            <h1 class="text-4xl pe-8 md:text-5xl lg:text-6xl font-extralight">
+              Scalable Weighing Solutions for Every Business Stage
+            </h1>
+            <p class="lg:text-xl mb-6">
+              We combine industrial precision with accessible service,
+              empowering everyday businesses to operate more efficiently and
+              confidently.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./public/images/rocket.png"
+              alt="rocket"
+              class="w-[300px] md:w-[500px] lg:w-[800px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section ends -->
+
+    <!-- Service Section Starts -->
+    <section class="pb-64">
+      <div class="max-w-7xl mx-auto px-4 pb-8">
+        <div class="py-8">
+          <h1 class="text-center text-2xl md:text-4xl text-black">Services</h1>
+        </div>
+        <div class="flex flex-col md:flex-row gap-2">
+          <div>
+            <div tabindex="0" class="collapse collapse-arrow bg-[#EB7228]">
+              <div class="collapse-title font-semibold">Technical Service</div>
+              <div class="collapse-content text-sm">
+                <div>
+                  <h2 class="font-bold text-xl">
+                    Preventive & Corrective Maintenance
+                  </h2>
+                  <p>
+                    Routine and on-demand repair services for digital scales,
+                    minimizing downtime and ensuring operational stability.
+                  </p>
+                </div>
+                <div>
+                  <h2 class="font-bold text-xl">Scale Installation & Setup</h2>
+                  <p>
+                    End-to-end service for installing weighing equipment, from
+                    small retail units to industrial-scale systems.
+                  </p>
+                </div>
+                <div>
+                  <h2 class="font-bold text-xl">
+                    Spare Parts & Component Replacement
+                  </h2>
+                  <p>
+                    Supply and installation of original parts from brands like
+                    Mettler Toledo, Rice Lake, Sayaki, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-arrow bg-[#EB7228]">
+              <div class="collapse-title font-semibold">
+                Legalization & Calibration
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-arrow bg-[#EB7228]">
+              <div class="collapse-title font-semibold">
+                Software & System Integration
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-arrow bg-[#EB7228]">
+              <div class="collapse-title font-semibold">
+                Digital Product Extensions
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section Ends -->
+
+    <!-- Products Section Starts -->
+    <section class="bg-[#F9FAFB]">
+      <div class="max-w-7xl mx-auto py-8 px-8">
+        <div>
+          <h1 class="text-black text-2xl md:text-4xl text-center">Products</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 py-8">
+          <div
+            class="bg-white px-3 py-4 rounded-2xl hover:shadow-2xl shadow- hover:scale-110 transition duration-100 ease-in-out flex items-center justify-center h-[600px]"
+          >
+            <img
+              src="./public/images/bench scale.png"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+          <div
+            class="bg-white px-3 py-4 rounded-2xl hover:shadow-2xl hover:scale-110 transition duration-100 ease-in-out flex items-center justify-center h-[600px]"
+          >
+            <img
+              src="./public/images/compact scale.png"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+          <div
+            class="bg-white px-3 py-4 rounded-2xl hover:shadow-2xl hover:scale-110 transition duration-100 ease-in-out flex items-center justify-center h-[600px]"
+          >
+            <img
+              src="./public/images/INDIKATOR.jpeg.png"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+          <div
+            class="bg-white px-3 py-4 rounded-2xl hover:shadow-2xl hover:scale-110 transition duration-100 ease-in-out flex items-center justify-center h-[600px]"
+          >
+            <img
+              src="./public/images/JEMBATAN TIMBANG.png"
+              alt=""
+              class="w-[300px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section Ends -->
+
+    <!-- Professional Workflow section starts -->
+    <section class="bg-[#F9FAFB]">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="pb-8">
+          <h1 class="text-2xl md:text-4xl text-black text-center">
+            Professional Workflow
+          </h1>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
+            <button
+              data-tab-target="#discovery"
+              class="active tab rounded-lg py-3 cursor-pointer border-2 font-bold border-[#12181F] w-full"
+            >
+              <p>
+                <span
+                  class="bg-[#D9D9D9] rounded-full px-3 p-2 text-[#12181F] mx-2"
+                  >1</span
+                >
+                Discovery & Planning
+              </p>
+            </button>
+            <button
+              data-tab-target="#implementation"
+              class="tab font-bold rounded-lg py-3 cursor-pointer border-2 border-[#12181F] w-full"
+            >
+              <p>
+                <span
+                  class="bg-[#D9D9D9] rounded-full px-3 p-2 text-[#12181F] mx-2"
+                  >2</span
+                >
+                Implementation & Certification
+              </p>
+            </button>
+            <button
+              data-tab-target="#support"
+              class="tab font-bold rounded-lg py-3 cursor-pointer border-2 border-[#12181F] w-full"
+            >
+              <p>
+                <span
+                  class="bg-[#D9D9D9] rounded-full px-3 p-2 text-[#12181F] mx-2"
+                  >3</span
+                >
+                Ongoing Support & Optimization
+              </p>
+            </button>
+          </div>
+          <div
+            class="flex flex-col md:flex-row py-4 gap-4 justify-center w-full"
+          >
+            <div id="discovery" data-tab-content class="active">
+              <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-1/3"
+                >
+                  <div class="flex gap-x-4 items-center">
+                    <div>
+                      <i
+                        id="icon-1"
+                        class="fa-solid fa-magnifying-glass bg-orange-400 rounded-full p-4"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                    <div>
+                      <div>
+                        <h1 class="text-xl" id="title-1">
+                          Consultation & Briefing
+                        </h1>
+                      </div>
+                      <div>
+                        <p class="flex items-center gap-x-2">
+                          <i
+                            class="fa-solid fa-clock"
+                            style="color: #ffffff"
+                          ></i>
+                          <span id="day-1">Day 1-3</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4">
+                    <p id="desc-1">
+                      We begin by identifying your business needs through a
+                      consultation session, either online or on-site.
+                    </p>
+                  </div>
+                  <div class="ms-auto pt-8 pe-4">
+                    <button
+                      id="btn-phase-to-2"
+                      data-tab-target="#implementation"
+                      class="hover:underline cursor-pointer"
+                    >
+                      Next Phase
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style="color: #ffffff"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-2/3"
+                >
+                  <div>
+                    <h1 class="text-white text-2xl">Steps:</h1>
+                  </div>
+                  <div class="w-full py-4 flex flex-col gap-2">
+                    <div id="div-1" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >1.</span
+                      >
+                      <p id="text-1">Consultation (online or on-site)</p>
+                    </div>
+                    <div id="div-2" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >2.</span
+                      >
+                      <p id="text-2">
+                        Needs assessment (scale type, usage, certification)
+                      </p>
+                    </div>
+                    <div id="div-3" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >3.</span
+                      >
+                      <p id="text-3">
+                        Proposal & pricing (subscription or one-time)
+                      </p>
+                    </div>
+                    <div id="div-4" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >4.</span
+                      >
+                      <p id="text-4">Invoice & agreement</p>
+                    </div>
+                    <div id="div-5" class="hidden">
+                      <div class="flex items-center gap-x-3">
+                        <span class="bg-orange-400 rounded-full px-3 py-2"
+                          >5.</span
+                        >
+                        <p id="text-5">Invoice & agreement</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="implementation" data-tab-content class="">
+              <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-1/3"
+                >
+                  <div class="flex gap-x-4 items-center">
+                    <div>
+                      <i
+                        id="icon-1"
+                        class="fa-solid fa-magnifying-glass bg-orange-400 rounded-full p-4"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                    <div>
+                      <div>
+                        <h1 class="text-xl" id="title-1">
+                          Implementation & Certification
+                        </h1>
+                      </div>
+                      <div>
+                        <p class="flex items-center gap-x-2">
+                          <i
+                            class="fa-solid fa-clock"
+                            style="color: #ffffff"
+                          ></i>
+                          <span id="day-1">Day 3-7</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4">
+                    <p id="desc-1">
+                      Our team proceeds with installation, integration, and
+                      optional metrology certification.
+                    </p>
+                  </div>
+                  <div class="ms-auto pt-8 pe-4">
+                    <button
+                      id="btn-phase-to-2"
+                      data-tab-target="#support"
+                      class="hover:underline cursor-pointer"
+                    >
+                      Next Phase
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style="color: #ffffff"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-2/3"
+                >
+                  <div>
+                    <h1 class="text-white text-2xl">Steps:</h1>
+                  </div>
+                  <div class="w-full py-4 flex flex-col gap-2">
+                    <div id="div-1" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >1.</span
+                      >
+                      <p id="text-1">Device installation & setup</p>
+                    </div>
+                    <div id="div-2" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >2.</span
+                      >
+                      <p id="text-2">System calibration & testing</p>
+                    </div>
+                    <div id="div-3" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >3.</span
+                      >
+                      <p id="text-3">Legal verification support (Tera/ISO)</p>
+                    </div>
+                    <div id="div-4" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >4.</span
+                      >
+                      <p id="text-4">Technical handover & basic training</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="support" data-tab-content class="">
+              <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-1/3"
+                >
+                  <div class="flex gap-x-4 items-center">
+                    <div>
+                      <i
+                        id="icon-1"
+                        class="fa-solid fa-magnifying-glass bg-orange-400 rounded-full p-4"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                    <div>
+                      <div>
+                        <h1 class="text-xl" id="title-1">
+                          Ongoing Support & Optimization
+                        </h1>
+                      </div>
+                      <div>
+                        <p class="flex items-center gap-x-2">
+                          <i
+                            class="fa-solid fa-clock"
+                            style="color: #ffffff"
+                          ></i>
+                          <span id="day-1">Continuous</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4">
+                    <p id="desc-1">
+                      We ensure your systems run reliably through regular
+                      maintenance, calibration, and optional software
+                      integration.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col bg-[#12181F] rounded-lg px-4 md:px-8 py-6 w-full md:w-2/3"
+                >
+                  <div>
+                    <h1 class="text-white text-2xl">Steps:</h1>
+                  </div>
+                  <div class="w-full py-4 flex flex-col gap-2">
+                    <div id="div-1" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >1.</span
+                      >
+                      <p id="text-1">Preventive maintenance (scheduled)</p>
+                    </div>
+                    <div id="div-2" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >2.</span
+                      >
+                      <p id="text-2">Re-calibration & legal renewal support</p>
+                    </div>
+                    <div id="div-3" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >3.</span
+                      >
+                      <p id="text-3">
+                        Priority repair service (for subscribers)
+                      </p>
+                    </div>
+                    <div id="div-4" class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >4.</span
+                      >
+                      <p id="text-4">Software updates & dashboard monitoring</p>
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <span class="bg-orange-400 rounded-full px-3 py-2"
+                        >5.</span
+                      >
+                      <p id="text-5">Customer support & consultation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Professional Workflow section ends -->
+
+    <!-- Footer section starts -->
+    <footer class="bg-[#12181F] text-white">
+      <div class="max-w-7xl mx-auto pt-48">
+        <div>
+          <div class="flex flex-col gap-y-4 p-4">
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between"
+            >
+              <div>
+                <a href="./index.html">
+                  <img
+                    src="./public/assets/logo_2.png"
+                    alt="fusionlab"
+                    class="w-[120px]"
+                  />
+                </a>
+              </div>
+              <div>
+                <ul class="flex items-center gap-x-6 text-lg">
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">About Us</a>
+                  </li>
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">Services</a>
+                  </li>
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center gap-x-4 text-2xl">
+                <a class="hover:text-orange-400 transition duration-100" href=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="hover:text-orange-400 transition duration-100" href=""
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a class="hover:text-orange-400 transition duration-100" href=""
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <div>
+                <div class="h-[2px] bg-white w-full"></div>
+              </div>
+              <div>
+                <p>© 2024 fusion.lab. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section ends -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
