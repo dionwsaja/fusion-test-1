@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FusionLab</title>
     <link rel="stylesheet" href="../src/css/output.css" />
+    <link rel="stylesheet" href="" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,228 +13,261 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </head>
-  <body>
-    <!-- nav section starts -->
-    <nav class="sticky top-0 bg-white z-50" id="navbar">
-      <div
-        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-6 text-black relative"
-      >
-        <div>
-          <a href="./about.html">
+  <body class="bg-white">
+    <!-- Navbar section starts -->
+    <nav class="bg-[#12181F] text-white sticky top-0 z-10" id="navbar">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex items-center justify-between">
+          <div>
             <img
               src="../public/assets/logo_2.png"
-              alt="Fusionlab logo"
-              class="w-[250px]"
+              alt="fusionlab"
+              class="w-[150px] lg:w-[200px]"
             />
-          </a>
+          </div>
+          <div class="block md:hidden">
+            <button id="hamburger" class="cursor-pointer right-4">
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+          </div>
+          <div class="hidden md:block">
+            <div class="flex">
+              <ul class="flex items-center justify-center gap-x-8 text-xl">
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="../index.html">Home</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="./about.html">About Us</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">Services</a>
+                </li>
+                <li
+                  class="hover:text-orange-400 transition ease-in-out duration-100"
+                >
+                  <a href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="sm:hidden">
-          <!-- Hamburger Button -->
-          <button
-            id="hamburger-btn"
-            aria-label="Toggle menu"
-            class="btn btn-ghost"
+        <!-- Mobile Menu starts -->
+        <div
+          id="mobile-menu"
+          class="md:hidden max-h-0 overflow-hidden transition-all duration-300 mt-4"
+        >
+          <ul
+            class="flex flex-col gap-y-4 text-lg bg-[#12181F] px-4 py-4 rounded-md shadow-md"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              <a href="../index.html">Home</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="./about.html">About Us</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">Services</a>
+            </li>
+            <li
+              class="hover:text-orange-400 transition ease-in-out duration-100"
+            >
+              <a href="">Blog</a>
+            </li>
+          </ul>
         </div>
-        <ul class="hidden sm:flex items-center gap-x-8 text-xl">
-          <li>
-            <a href="../index.html" class="hover:text-[#FF914D] duration-100"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="./about.html" class="hover:text-[#FF914D] duration-100"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a href="./service.html" class="hover:text-[#FF914D] duration-100"
-              >Services</a
-            >
-          </li>
-
-          <li>
-            <a href="./blog.html" class="hover:text-[#FF914D] duration-100"
-              >Blog</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <!-- Mobile menu sliding from top -->
-      <div
-        id="mobile-menu"
-        class="sm:hidden max-h-0 overflow-hidden bg-white shadow-md transition-[max-height] duration-500 ease-in-out"
-        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)"
-      >
-        <ul class="flex flex-col gap-y-6 px-6 py-4 text-xl">
-          <li>
-            <a href="../index.html" class="hover:text-[#FF914D] duration-100"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="./about.html" class="hover:text-[#FF914D] duration-100"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a href="./service.html" class="hover:text-[#FF914D] duration-100"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="./blog.html" class="hover:text-[#FF914D] duration-100"
-              >Blog</a
-            >
-          </li>
-        </ul>
+        <!-- Mobile Menu ends -->
       </div>
     </nav>
-    <!-- nav section ends -->
+    <!-- Navbar Section Ends -->
 
-    <!-- About Us section 2 starts -->
     <section>
-      <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="max-w-7xl mx-auto text-black px-4 py-16">
         <div>
-          <h1 class="text-center text-5xl">About Us</h1>
+          <h1 class="text-5xl font-semibold">
+            Practical, certified, and long-term solutions for modern weighing
+            needs
+          </h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 pt-8">
-          <div
-            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
+        <div class="flex flex-col gap-y-4 py-4">
+          <p>
+            We specialize in delivering scalable weighing system, calibration
+            services, and optional software support for both growing bussiness
+            and industrial operations.
+          </p>
+          <p>
+            we work with a wide range of clients, level partners and global
+            scale brands. whether you need accurate digital scale, metrology
+            certification or on-going maintenance, our team ensures your systems
+            are always compliant and reliable.
+          </p>
+        </div>
+        <div>
+          <a
+            href=""
+            target="_blank"
+            class="bg-[#FE8032] text-white px-4 py-3 rounded-full border border-[#FE8032] hover:text-[#FE8032] hover:bg-white transition duration-100"
+            >Ready to support your growth</a
           >
-            <p class="md:text-lg lg:text-xl">
-              <span class="font-bold">fusion.lab</span> is the official brand of
-              <span class="font-bold">CV Fusion Jaya Group</span>, a company
-              engaged in the trade and services of digital weighing systems for
-              a wide range of business scales—from micro and small enterprises
-              to national and multinational corporations.
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#12181F]">
+      <div class="max-w-7xl mx-auto px-4 py-4">
+        <div>
+          <h1 class="text-center py-4 text-3xl">How we help your business?</h1>
+        </div>
+        <div class="flex flex-col gap-4 md:flex-row justify-center w-full">
+          <div class="bg-[#FE8032] p-4 rounded-xl flex flex-col w-full">
+            <div>
+              <h2 class="text-2xl font-bold">Hardware & Installation</h2>
+            </div>
+            <div>
+              <p>we provide and install reliable digital scales</p>
+            </div>
+            <div class="ms-auto pe-4">
+              <a href="" class="underline">see details</a>
+            </div>
           </div>
-          <div
-            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
-          >
-            <p class="md:text-lg lg:text-xl">
-              Trusted by industry leaders such as
-              <span class="font-bold">PT Mettler Toledo </span> and various
-              corporate clients, we have built a reputation for delivering
-              accurate, efficient, and reliable weighing solutions tailored to
-              industrial standards.
-            </p>
+          <div class="bg-[#FE8032] p-4 rounded-xl flex flex-col w-full">
+            <div>
+              <h2 class="text-2xl font-bold">Calibration & Legalization</h2>
+            </div>
+            <div>
+              <p>certified calibration and metrology support</p>
+            </div>
+            <div class="ms-auto pe-4">
+              <a href="" class="underline">see details</a>
+            </div>
           </div>
-          <div
-            class="border border-slate-600/80 rounded-xl px-4 py-5 shadow-lg hover:shadow-2xl duration-100 hover:scale-105"
-          >
-            <p class="md:text-lg lg:text-xl">
-              At the same time, we are passionate about making high-quality
-              technology more accessible for micro and small businesses.
-              fusion.Lab bridges this gap by offering
-              <span class="font-bold"
-                >affordable, scalable weighing solutions</span
-              >
-              with
-              <span class="font-bold"
-                >subscription-based maintenance services</span
-              >
-              , ensuring long-term reliability and convenience for businesses of
-              any size.
-            </p>
+          <div class="bg-[#FE8032] p-4 rounded-xl flex flex-col w-full">
+            <div>
+              <h2 class="text-2xl font-bold">Software & monitoring</h2>
+            </div>
+            <div>
+              <p>optional tools to track and monitor in real time</p>
+            </div>
+            <div class="ms-auto pe-4">
+              <a href="" class="underline">see details</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- About US section 2 ends -->
-    <!-- Footer Section Starts -->
-    <footer class="bg-[#1f2d3d] text-white">
-      <div class="max-w-7xl mx-auto px-6 py-12 space-y-8">
-        <!-- Top Text Section -->
-        <div class="text-center space-y-3">
-          <p class="text-lg md:text-2xl">Got a Project in Mind?</p>
-          <h1
-            class="text-3xl md:text-5xl font-bold tracking-wide max-w-3xl mx-auto"
-          >
-            Do Better Software Design with Us.
-          </h1>
+
+    <section class="bg-[#12181F]">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="mb-3">
+          <h1 class="text-3xl">Why Choose us?</h1>
         </div>
+        <div class="mb-3">
+          <h2 class="text-xl font-bold">⁠Certified & Compliant</h2>
+          <p>
+            We work directly with authorized metrology agencies to ensure every
+            weighing system meets legal and industry standards.
+          </p>
+        </div>
+        <div class="mb-3">
+          <h2 class="text-xl font-bold">Built for Small & Big Business</h2>
+          <p>
+            Whether you’re a local food vendor or a multinational factory, our
+            solutions are flexible and scalable to fit your operational needs.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold">Technical Expertise, Human Touch</h2>
+          <p>Handled by experienced technicians who actually care</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Divider -->
-        <div class="h-[1px] bg-gray-500/30 w-full"></div>
-
-        <!-- Contact & Social Section -->
-        <div class="grid grid-cols-1 md:grid-cols-3">
-          <div class="pb-4">
-            <a href="./about.html">
-              <img
-                src="../public/assets/logo_2.png"
-                alt="Fusionlab logo"
-                class="w-[200px]"
-              />
-            </a>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="flex flex-col gap-y-1 text-lg">
-            <p>
-              Email:
-              <a
-                href="mailto:contactfusion.lab24@gmail.com"
-                class="underline hover:text-[#f1823c] transition"
-              >
-                contactfusion.lab24@gmail.com
-              </a>
-            </p>
-            <p>Contact: 085784246763</p>
-            <p>Jawa Timur - Jl. Bulak Setro 4 No 1, Kota Surabaya, 60124</p>
-          </div>
-
-          <!-- Social Media & Button -->
-          <div class="flex flex-col md:items-end">
-            <div class="flex gap-x-4 py-6 md:py-0 md:pb-6">
-              <a href="#"
-                ><i
-                  class="fa-brands fa-instagram text-2xl hover:text-[#f1823c] transition"
-                ></i
-              ></a>
-              <a href="#"
-                ><i
-                  class="fa-brands fa-tiktok text-2xl hover:text-[#f1823c] transition"
-                ></i
-              ></a>
-              <a href="#"
-                ><i
-                  class="fa-brands fa-facebook text-2xl hover:text-[#f1823c] transition"
-                ></i
-              ></a>
+    <!-- Footer section starts -->
+    <footer class="bg-[#12181F] text-white">
+      <div class="max-w-7xl mx-auto pt-16">
+        <div>
+          <div class="flex flex-col gap-y-4 p-4">
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between"
+            >
+              <div>
+                <a href="./index.html">
+                  <img
+                    src="../public/assets/logo_2.png"
+                    alt="fusionlab"
+                    class="w-[120px]"
+                  />
+                </a>
+              </div>
+              <div>
+                <ul class="flex items-center gap-x-6 text-lg">
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">About Us</a>
+                  </li>
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">Services</a>
+                  </li>
+                  <li class="hover:text-orange-400 transition duration-100">
+                    <a href="">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center gap-x-4 text-2xl">
+                <a class="hover:text-orange-400 transition duration-100" href=""
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  class="hover:text-orange-400 transition duration-100"
+                  href="https://wa.me/6285784246763"
+                  target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a class="hover:text-orange-400 transition duration-100" href=""
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
             </div>
-            <div>
-              <a
-                href="#"
-                class="bg-[#f1823c] text-white px-4 py-2 rounded-full border border-[#f1823c] hover:bg-white hover:text-[#f1823c] transition font-medium w-fit"
-              >
-                Connect with us
-              </a>
+            <div class="flex flex-col gap-y-2">
+              <div>
+                <div class="h-[2px] bg-white w-full"></div>
+              </div>
+              <div>
+                <p>© 2024 fusion.lab. All rights reserved.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- Footer Section Ends -->
+    <!-- Footer Section ends -->
     <script src="../src/js/script.js"></script>
   </body>
 </html>
